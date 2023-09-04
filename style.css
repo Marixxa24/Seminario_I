@@ -1,0 +1,69 @@
+/*botones de barra nav*/
+.btn.btn-primary{
+    background-color: #26647b;
+
+}
+.carousel-inner{
+    width: 100vh ;
+    height: 500px;
+}
+
+
+.text-white.text-fluid{
+   color: black;
+
+}
+.nav-scroller {
+    background-color: aliceblue;
+}
+.container-fluid{
+    background-color: aliceblue;
+}
+.imagen-ajust{
+    flex-grow:1;
+    object-fit:cover;
+    width: 100%;
+}
+.becas{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blog-footer{
+    
+    background-color: #26647b;
+    width: 100%;
+    height: 150px;
+}
+.centrar{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Estilos para el botón flotante */
+/* Estilos para el botón flotante */
+.chat-button {
+    position: fixed; /* Fija el botón en la ventana del navegador */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    background-color: #26647b; /* Cambia el color de fondo del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    z-index: 999; /* Ajusta el índice z para que esté por encima de otros elementos */
+    display: flex; /* Permite centrar la imagen dentro del botón */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+    
+  }
+  
+  .chat-button img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 100%; /* Ajusta el tamaño máximo de la imagen */
+ 
+    border-radius: 100%; /* Hace que el botón sea redondo */
+  }
+  
+  
+  

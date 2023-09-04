@@ -1,0 +1,486 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+
+<html lang="es"> <!-- Apertura del elemento HTML con especificación de idioma -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres a UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configuración de la vista en dispositivos móviles -->
+  <title>Maqueta sem_I</title> <!-- Título de la página -->
+
+  <!-- Inclusión de la hoja de estilos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <!-- Inclusión de la fuente de iconos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <!-- Inclusión de una hoja de estilos personalizada (style.css) -->
+  <link rel="stylesheet" href="style.css">
+  <!--toastin-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación Bootstrap -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <!-- Logotipo de la página -->
+      <a class="navbar-brand" href="#">
+        <img src="./img/unlar_logo.png" alt="Logo" width="300" height="100" class="d-inline-block align-text-top">
+      </a>
+
+      <!-- Grupos de botones desplegables -->
+
+      <!-- Botón desplegable 1 arreglar-->
+      <div class="btn-group">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          UNLAR
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item dropdown-toggle"
+              href="https://www.unlar.edu.ar/index.php/unlar/institucion">Instituion </a>
+          </li>
+          <!-- ms opciones y subopciones -->
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Opción 4</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Subopción 4.1</a></li>
+              <li><a class="dropdown-item" href="#">Subopción 4.2</a></li>
+            </ul>
+          </li>
+          <!-- opciones y subopciones -->
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Opción 5</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Subopción 5.1</a></li>
+              <li><a class="dropdown-item" href="#">Subopción 5.2</a></li>
+            </ul>
+          </li>
+          <!-- opciones y subopciones -->
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Opción 6</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Subopción 6.1</a></li>
+              <li><a class="dropdown-item" href="#">Subopción 6.2</a></li>
+            </ul>
+          </li>
+          <!--  opciones y subopciones -->
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Opción 7</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Subopción 7.1</a></li>
+              <li><a class="dropdown-item" href="#">Subopción 7.2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- Botón desplegable 2 -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          INVESTIGACIÓN
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/investigacion-y-vinculacion-tecnologica/areas">Anvito de
+              investigacion y vinculacion tecnologica</a></li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/investigacion-y-vinculacion-tecnologica/proyectos">Proyectos</a>
+          </li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/investigacion-y-vinculacion-tecnologica/becas">Becas</a></li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/investigacion-y-vinculacion-tecnologica/cicyt">CiCyT</a></li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/investigacion-y-vinculacion-tecnologica/categorizacion">Categorizacion</a>
+          </li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/investigacion-y-vinculacion-tecnologica/convenios">Convenios</a>
+          </li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/investigacion-y-vinculacion-tecnologica/publicaciones-cientificas">Publicaciones
+              Cientificas</a></li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/investigacion-y-vinculacion-tecnologica/panoptico">Panoptico</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Botón desplegable 3 -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+          data-bs-display="static" aria-expanded="false">
+          EXTENSIÓN
+        </button>
+        <ul class="dropdown-menu dropdown-menu-lg-end">
+          <li><a class="dropdown-item" href="https://www.unlar.edu.ar/index.php/extension/comisiones">Comisiones</a>
+          </li>
+          <li><a class="dropdown-item" href="https://www.unlar.edu.ar/index.php/extension/becas">Becas</a></li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/extension/convocatorias">Convocatoria</a></li>
+          <li><a class="dropdown-item" href="https://www.unlar.edu.ar/index.php/extension/unlar-y-territorio">UNLaR y
+              Territorio</a></li>
+          <li><a class="dropdown-item" href="https://www.unlar.edu.ar/index.php/extension/deporte">Deporte</a></li>
+          <li><a class="dropdown-item" href="https://www.unlar.edu.ar/index.php/extension/arte-y-cultura">Arte y
+              Cultura</a></li>
+        </ul>
+      </div>
+
+      <!-- Botón desplegable 4 -->
+      <div class="btn-group">
+        <a class="btn btn-primary" href="https://transparencia.unlar.edu.ar/" role="button"> TRANSPARENCIA </a>
+      </div>
+
+      <!-- Botón desplegable 5 (Dropstart) -->
+      <div class="btn-group dropstart">
+        <a class="btn btn-primary" href="https://www.unlar.edu.ar/index.php/servicios" role="button"> SERVICIOS </a>
+      </div>
+
+      <!-- Botón desplegable 6 (Dropend) -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+          data-bs-display="static" aria-expanded="false">
+          MEDIOS
+        </button>
+        <ul class="dropdown-menu dropdown-menu-lg-end">
+          <li><a class="dropdown-item" href="https://www.unlar.edu.ar/index.php/medios/radio-unlar">Radio UNLaR</a></li>
+          <li><a class="dropdown-item" href="https://www.unlar.edu.ar/index.php/medios/unlar-tv">UNLaR TV</a></li>
+          <li><a class="dropdown-item" href="https://www.unlar.edu.ar/index.php/medios/prensa">Prensa</a></li>
+          <li><a class="dropdown-item"
+              href="https://www.unlar.edu.ar/index.php/medios/publicaciones-digitales">Publicaciones Digitale</a></li>
+        </ul>
+      </div>
+
+      <!-- Botón desplegable 7 (Dropup) -->
+      <div class="btn-group dropup">
+        <a class="btn btn-primary" href="https://www.unlar.edu.ar/index.php/sistemas-siu" role="button"> SIU </a>
+      </div>
+      <!-- Botón desplegable 8 (Dropup) -->
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Ingresar
+        </button>
+      </div>
+
+    </div>
+
+  </nav>
+  <!--segunda barra que para mi esta al pepe-->
+  <div class="container-fluid p-12  text-white text-center">
+    <div class="nav-scroller py-1 mb-2">
+      <a class="p-2 link-secondary" href="#">World</a>
+      <a class="p-2 link-secondary" href="#">U.S.</a>
+      <a class="p-2 link-secondary" href="#">Technology</a>
+      <a class="p-2 link-secondary" href="#">Design</a>
+      <a class="p-2 link-secondary" href="#">Culture</a>
+      <a class="p-2 link-secondary" href="#">Business</a>
+      <a class="p-2 link-secondary" href="#">Politics</a>
+      <a class="p-2 link-secondary" href="#">Opinion</a>
+      <a class="p-2 link-secondary" href="#">Science</a>
+      <a class="p-2 link-secondary" href="#">Health</a>
+      <a class="p-2 link-secondary" href="#">Style</a>
+      <a class="p-2 link-secondary" href="#">Travel</a>
+    </div>
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p>
+  </div>
+  <!--carrucel de noticias -->
+
+  <section class="imagen-ajust">
+    <div class="row row-cols-auto row-cols-md-3 g-6">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.unlar.edu.ar/cache/mod_xpertcontents/36dc680618a9a5b8ee30179260cdbaff_resized.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.unlar.edu.ar/cache/mod_xpertcontents/717f397f3cb45ea675e9c12a9b9a77d1_resized.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.unlar.edu.ar/cache/mod_xpertcontents/182dd6114f281aee44d7e264e27087de_resized.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.unlar.edu.ar/cache/mod_xpertcontents/d2baf98ff3e894251b24453c9aca6eb8_resized.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.unlar.edu.ar/cache/mod_xpertcontents/d2baf98ff3e894251b24453c9aca6eb8_resized.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.unlar.edu.ar/cache/mod_xpertcontents/d2baf98ff3e894251b24453c9aca6eb8_resized.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <hr>
+  <!--section the enlace the pag agregar los enlaces y demas animaciones-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <!-- Columna para las dos primeras imágenes -->
+        <div class="col-md-6">
+          <a href="https://campusvirtual.unlar.edu.ar/">
+            <div class="card">
+              <img src="./img/campus_virtual-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="https://guarani.unlar.edu.ar/">
+            <div class="card">
+              <img src="./img/siuguarani.png" class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+        </div>
+        </a>
+      </div>
+      <div class="row">
+        <!-- Columnas para las cuatro imágenes restantes -->
+        <div class="col-md-3">
+          <a href="https://www.unlar.edu.ar/index.php/component/content/article?id=502">
+            <div class="card">
+              <img src="./img/calendario_acad.png" class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.unlar.edu.ar/index.php/component/content/article?id=2760">
+            <div class="card">
+              <img src="./img/solicitud_de_titulso.png" class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.unlar.edu.ar/">
+            <div class="card">
+              <img src="./img/cursos_de_posgrado.png" class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <div class="col-md-3">
+          <a href="http://expedientes.unlar.edu.ar/iniciador_expe.php">
+            <div class="card">
+              <img src="./img/segui__tu_tramite.png" class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!--seccion becas-->
+
+  <section>
+    <h1 class="becas">Informate sobre las becas disponibles</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <a href=" https://www.unlar.edu.ar/">
+            <img src="./img/1.png" class="card-img-top" alt="...">
+          </a>
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <a href="https://www.unlar.edu.ar/">
+            <img src="./img/2.png" class="card-img-top" alt="...">
+          </a>
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <a href="https://www.unlar.edu.ar/index.php/component/content/article?id=3670">
+            <img src="./img/3.png" class="card-img-top" alt="...">
+          </a>
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="youTube">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col-md-8"> <!-- Columna para el video -->
+        <div class="card float-start">
+          <iframe width="800" height="415" src="https://www.youtube.com/embed/zdXIXl2ivFg?si=fZqiyIwAPK_d6Cg1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title">Expo Carrera UNLaR</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"> <!-- Columna para las imágenes -->
+        <div class="card float-start">
+          <a href="https://eudelar.unlar.edu.ar/" target="_blank">
+            <img src="./img/editorialMesa_de_trabajo_172x-8.png" class="card-img-top" alt="Enlace 1">
+          </a>
+          <div class="card-body">
+          </div>
+        </div>
+
+        <div class="col-md-12"> 
+        <div class="card float-start">
+          <a href="https://www.unlar.edu.ar/index.php/in/90-medios/noticias" target="_blank">
+            <img src="./img/noti.jpg" class="card-img-top" alt="Enlace 2">
+          </a>
+          <div class="card-body">
+          </div>
+        </div>
+        <div class="col-md-12"> 
+          <div class="card float-start">
+            <!--nuevo titulo  enlaces de interes-->
+              <img src="./img/enlace_de_interes.jpg" class="card-img-top" alt="Enlace 2">
+            <div class="card-body">
+            </div>
+          </div>
+          <!--deporte y cultura-->
+          <div class="col-md-12"> 
+            <div class="card float-start">
+              <a href="https://www.unlar.edu.ar/index.php/component/content/article?id=49" target="_blank">
+                <img src="./img/deportes-y-cultura-.jpg" class="card-img-top" alt="Enlace 2">
+              </a>
+              <div class="card-body">
+              </div>
+            </div>
+            <!--sala de primeros auxilios-->
+            <div class="col-md-12"> 
+              <div class="card float-start">
+                <a href="https://www.unlar.edu.ar/index.php/component/content/article?id=48">
+                  <img src="./img/-sala-de-primeros-auxilios-.jpg" class="card-img-top" alt="Enlace 2">
+                </a>
+                <div class="card-body">
+                </div>
+              </div>
+              <!-- comedor uni-->
+              <div class="col-md-12"> 
+                <div class="card float-start">
+                  <a href="https://www.unlar.edu.ar/index.php/component/content/article?id=46" target="_blank">
+                    <img src="./img/comedor-universitario.jpg" class="card-img-top" alt="Enlace 2">
+                  </a>
+                  <div class="card-body">
+                  </div>
+                </div>
+                <!-- Biblioteca-->
+                <div class="col-md-12"> 
+                  <div class="card float-start">
+                    <a href="https://www.unlar.edu.ar/index.php/component/content/article?id=47" target="_blank">
+                      <img src="./img/Biblioteca.jpg " class="card-img-top" alt="Enlace 2">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                  </div>
+      </div>
+    </div>
+    
+  </section>
+  <!--ultina parte -->
+  <br>
+  <section class="canales">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="./img/segui_nuestros_canales.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <a href="https://multimediounlar.ar/">
+              <img src="./img/multimedio.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--boton flotante-->
+  <button class="chat-button">
+    <img src="./img/marisaperfil-2.png" alt="Icono de Chat"> <!-- Agrega la ruta de tu imagen aquí -->
+  </button>
+  
+<br>
+  <!--footer-->
+  <footer class="blog-footer">
+    <br>
+    <p class="centrar"><b> ©2022 Universidad Nacional de La Rioja </b> </p>
+  </footer>
+
+  <link rel="stylesheet" href="script.js">
+  <!-- Inclusión del script de Bootstrap para funcionalidad interactiva -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
