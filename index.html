@@ -464,10 +464,33 @@
       </div>
     </div>
   </section>
-  <!--boton flotante-->
-  <button class="chat-button">
-    <img src="./img/marisaperfil-2.png" alt="Icono de Chat"> <!-- Agrega la ruta de tu imagen aquí -->
-  </button>
+ <!-- Botón flotante para abrir el modal -->
+<button class="chat-button" id="open-chat" onclick="openChat()">
+  <img src="./img/marisaperfil-2.png" alt="Icono de Chat">
+</button>
+
+<!-- Ventana de chat oculta inicialmente -->
+<div class="chatbot" id="chatbot">
+    <div class="chatbot-header">
+        <h1>Chatbot</h1>
+        <button class="chatbot-close" id="close-chat" onclick="closeChat()">X</button>
+    </div>
+    <div class="chatbot-body">
+        <div class="chatbot-messages">
+            <div class="chatbot-message user">
+                Hola, ¿cómo estás?
+            </div>
+            <div class="chatbot-message bot">
+                Estoy bien, gracias por preguntar. ¿Y tú?
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="message-input" placeholder="Escribe tu mensaje aquí">
+            <button class="chatbot-send" id="send-message">Enviar</button>
+        </div>
+    </div>
+</div>
+
   
 <br>
   <!--footer-->
@@ -476,7 +499,7 @@
     <p class="centrar"><b> ©2022 Universidad Nacional de La Rioja </b> </p>
   </footer>
 
-  <link rel="stylesheet" href="script.js">
+  <script src="script.js"></script>
   <!-- Inclusión del script de Bootstrap para funcionalidad interactiva -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
